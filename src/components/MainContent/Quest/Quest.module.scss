@@ -1,0 +1,56 @@
+.Quest {
+  display: flex;
+  border-radius: 0.2rem;
+  padding: 1.5rem 2rem 1.5rem 1rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  box-shadow: 0 0 12px grey;
+  color: darken(grey, 10%);
+}
+
+.New {
+  @extend .Quest;
+  background-color: #d6e5fa;
+}
+
+.Update {
+  @extend .Quest;
+  background-color: #fdfd96;
+}
+
+.Complete {
+  @extend .Quest;
+  background-color: #bdecb6;
+}
+
+.QuestIcon {
+  width: 15%;
+  font-size: 4rem;
+  text-align: center;
+  min-width: 100px;
+}
+
+.QuestDetails {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  h4,
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
+.Rewards {
+  h2 {
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}

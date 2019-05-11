@@ -1,0 +1,39 @@
+.CharacterBio {
+  border: 2px solid lightgrey;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  color: darken(grey, 10%);
+  display: flex;
+  background-color: lightgrey;
+  box-shadow: 0 0 12px grey;
+  border-radius: 2px;
+
+  figure {
+    width: 30%;
+    height: fit-content;
+    margin-right: 2rem;
+    position: relative;
+    box-shadow: 0 0 12px grey;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+  }
+
+  div {
+    width: 70%;
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    h4 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      letter-spacing: 0.1rem;
+      line-height: 150%;
+    }
+  }
+}

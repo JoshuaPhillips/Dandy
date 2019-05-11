@@ -1,0 +1,33 @@
+.PartySplit {
+  border-top: 2px solid lightgrey;
+
+  padding: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: darken(grey, 10%);
+  position: relative;
+
+  &::before {
+    content: 'A Fork in the Road';
+    position: absolute;
+    top: 0em;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    background: #fff;
+    font-size: 1rem;
+    width: 20%;
+    height: 2rem;
+    color: grey;
+    text-align: center;
+  }
+
+  h1 {
+    width: 100%;
+  }
+
+  p {
+    letter-spacing: 0.1rem;
+    line-height: 150%;
+  }
+}

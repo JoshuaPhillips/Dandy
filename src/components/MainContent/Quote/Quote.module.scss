@@ -1,0 +1,41 @@
+.Quote {
+  margin: 1rem 0;
+}
+
+blockquote {
+  color: darken(grey, 10%);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  display: block;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: lightgrey;
+  padding: 1.5em 0.5rem 0.5em;
+  text-align: center;
+  position: relative;
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+blockquote:before {
+  content: '\201C';
+  position: absolute;
+  top: 0em;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  background: #fff;
+  font-size: 3rem;
+  width: 3rem;
+  height: 2rem;
+  color: grey;
+  text-align: center;
+}
+
+blockquote:after {
+  content: '\2013 \2003'attr(cite);
+  display: block;
+  text-align: right;
+  font-style: italic;
+  color: grey;
+  font-size: 1rem;
+}
