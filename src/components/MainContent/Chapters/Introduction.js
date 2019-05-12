@@ -238,14 +238,118 @@ const introduction = props => {
 
           <p>
             'Of course. No problem.' replied Ilro, reaching down to a cloth drawstring bag tied tightly around her
-            waist. Zyllana did the same at her own belt, dropping her purse deliberately on the counter. 'Thank you. I trust this
-            will be sufficient?' - this last question directed at Merdor, who was looking at the group with a confused expression.
+            waist. Zyllana did the same at her own belt, dropping her purse deliberately on the counter. 'Thank you. I
+            trust this will be sufficient?' - this last question directed at Merdor, who was looking at the group with a
+            confused expression.
           </p>
 
-          <p>The blacksmith weighed the pouch thoughtfully in his hand, as well as counting the five shining coins from Ilro. 'Aye, that'll do nicely.' he said finally. 'Anyhting else?' The professionalism and friendliness in his tone was nowhere to be found anymore; he'd had enough.</p>
+          <p>
+            The blacksmith weighed the pouch thoughtfully in his hand, as well as counting the five shining coins from
+            Ilro. 'Aye, that'll do nicely.' he said finally. 'Anything else?' The professionalism and friendliness in
+            his tone was nowhere to be found anymore; he'd had enough.
+          </p>
+
+          <p>
+            'That's quite enough, thank you for your help.' placated Faelthys, strolling calmly towards the door.
+            Zyllana and Ilro gave Merdor only a smile before joining their partner on the street outside, and they were
+            away before the tinkling of the bell had finished resounding through the newly deserted shop.
+          </p>
         </PartySplitSection>
         <PartySplitSection characters={['Anton']}>
-          <p>Did some other things.</p>
+          <p>
+            Anton admired the sheen on his boots as he strode confidently down the hill. The fresh air felt good on his
+            face, and the sun was just at that point in the afternoon where the Chiontar became the golden jewel of
+            Baldur's Gate. He loved the spring.
+          </p>
+
+          <p>
+            Walking at an easy pace, the sounds of mid-afternoon labour filled his ears. The gentle lapping of water on
+            wooden piers, the resonant clang of a ship's bell as it departed with its cargo, the swearing and general
+            ruckus of the sailor-folk, sweating under the heat and humidity as they lifted barrels of spices and mead,
+            crates of shiny, tanned leather and freshly-caught fish.
+          </p>
+
+          <p>
+            His journey took him to a warehouse he knew well, having raided it a few times under the guise of a fellow
+            sailor. Fortunately, unlike Ilro, Anton was careful to maintain a discreet approach when skirting with the
+            law, or the wrath of the dock-workers.
+          </p>
+
+          <p>
+            The men did not look up as he approached - strangers were not unwelcome, but rarely expected. Anton
+            recognised them from a few local taverns that he'd frequented, but didn't remember meeting any of them.
+            Though that didn't necessarily mean he hadn't; Anton was still sure that his last drink had been topped up
+            without his knowing...
+          </p>
+
+          <p>
+            'Evening gentlemen.' he greeted them, extracting from his coat pocket a long, narrow wooden pipe. 'Don't
+            suppose any of you has a match?'
+          </p>
+
+          <p>
+            The group looked at each other, before one of them reached into his own trouser pocket and dropped a nearly
+            empty box of cheap matches on the crate around which they stood. 'Help yourself.' came his voice, much
+            higher than Anton was expecting. He knew better than to smile.
+          </p>
+
+          <p>
+            'Much obliged.' Anton struck a match on the first try, and put the flame to the bowl of his pipe. Within a
+            few second the dry tobacco was crackling with a thick, dark smoke. 'What's mine is yours.' he said,
+            proffering the newly lit pipe the group.
+          </p>
+
+          <p>
+            The tallest of the group nodded appreciatively to Anton, and took a long, slow draw on the pipe, exhaling a
+            serviceable smoke ring from between the greying whiskers of a curly black beard. He passed the pipe back
+            with another curt nod, and a brief but not uncomfortable silence settled on the group.
+          </p>
+
+          <p>
+            'So lads, what are your thoughts on this new Death Curse that's been plaguing the city?' Anton tried to make
+            the question sound casual, and was slightly relieved to see that his companions didn't seem put out by the
+            question. ''s obvious, innit?', replied the tallest once more. 'Gods're angry. 's not right, no it ain't.'
+          </p>
+
+          <p>
+            The rest of his colleagues nodded in agreement. 'No, definitely not right.' concurred Anton. '...what
+            exactly isn't right?'
+          </p>
+
+          <p>
+            'The priests, of course.' objected the one to the right of matchbox owner. 'They're up there all day and
+            night, bringing ou' innocent souls from their resting places and tetherin' 'em here again, where they don't
+            belong. 's why they can't do it to none of the sick. The Gods don't want it no more.'
+          </p>
+
+          <p>
+            Anton raised his eyebrows in surprise; he'd heard many rumours and theories behind the affliction that had
+            wrapped itself around the city, but no-one had so far blamed the priests. He supposed the theory did have
+            some merit, but he wasn't particularly one for superstition, or those that practiced it.
+          </p>
+
+          <p>
+            'But surely the priests are just trying to help. I mean, if the Gods should favour anyone, it's them, no?
+            You don't know any more about it?' Anton cursed silently as he spoke - had he pushed it too far?
+          </p>
+
+          <p>
+            The tall sailor spat a thick wad of tarry black saliva on the wooden-slatted floor. 'Nobody knows. Best you
+            just keep your 'ead down and stay away from any...re-anima'ed.' Anton could have sworn he saw a shudder roll
+            through the shoulders of the sailor, despite the shining sun.
+          </p>
+
+          <p>
+            'Yes, perhaps best.' he agreed, thoughtfully. 'Ah well, thanks for your time.' He passed the pipe back to
+            the man, who drew another, fortifying breath before returning it without moving his gaze from the far shore
+            of the slowly-moving river.
+          </p>
+
+          <p>
+            Anton wished he had been paying more attention, as he could see that the bowl of the pipe, now empty, was
+            smeared with a thick, dark substance. He didn't think it was mud. With a final nod of farewell, he strode
+            back up the road to return to his companions, feeling frustrated at the fruitless nature of his visit.
+          </p>
         </PartySplitSection>
       </PartySplit>
 
@@ -255,7 +359,7 @@ const introduction = props => {
       <Lorem />
       <Combat />
       <Lorem />
-      <Quest type='complete' name="Syndra's Lockbox" desc='Recover some stolen items for Syndra. c'>
+      <Quest type='complete' name="Syndra's Lockbox" desc='Recover some stolen items for Syndra.'>
         <Lorem />
       </Quest>
       <LevelUp level='2' />
