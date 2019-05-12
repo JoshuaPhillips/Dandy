@@ -3,12 +3,12 @@ import React from 'react';
 import BannerImage from '../BannerImage/BannerImage';
 import BannerText from '../BannerText/BannerText';
 import SectionTitle from '../SectionTitle/SectionTitle';
-import Lorem from '../../Lorem/Lorem';
+
 import Quote from '../Quote/Quote';
 import Quest from '../Quest/Quest';
-import Combat from '../Combat/Combat';
+
 import SubTitle from '../SubTitle/SubTitle';
-import LevelUp from '../LevelUp/LevelUp';
+
 import PartySplit from '../PartySplit/PartySplit';
 import PartySplitSection from '../PartySplit/PartySplitSection/PartySplitSection';
 import * as tombLogo from '../../../assets/tombofannihillogo.jpg';
@@ -347,22 +347,70 @@ const introduction = props => {
 
           <p>
             Anton wished he had been paying more attention, as he could see that the bowl of the pipe, now empty, was
-            smeared with a thick, dark substance. He didn't think it was mud. With a final nod of farewell, he strode
-            back up the road to return to his companions, feeling frustrated at the fruitless nature of his visit.
+            smeared with a thick, dark substance - a generous gift from the sailor's labour. From the smell, he didn't
+            think it was mud... With a final nod of farewell, he strode back up the road to return to his companions,
+            feeling frustrated at the fruitless nature of his visit.
           </p>
         </PartySplitSection>
       </PartySplit>
 
-      <Lorem />
-      <Lorem />
-      <Quote author='Zyllana'>Praytime's over...</Quote>
-      <Lorem />
-      <Combat />
-      <Lorem />
-      <Quest type='complete' name="Syndra's Lockbox" desc='Recover some stolen items for Syndra.'>
-        <Lorem />
-      </Quest>
-      <LevelUp level='2' />
+      <p>
+        'You've got shit on your shoes.' chuckled Ilro as Anton drudged his way back up the hill towards them. 'Have fun
+        at the docks?'
+      </p>
+
+      <p>
+        'Nothing to report. Let's just head to Syndra's.' came the muttered reply, and the group headed east through the
+        merchant district, led by Faelthy's unwavering sense of direction.
+      </p>
+
+      <p>
+        The Silvane Estate was hard to miss - sprawling gardens with perfectly trimmed hedges, sparkling water features
+        and ornate, delicate masonry adorning the windows and large doorway. Anton let out a low whistle of appreciation
+        as they climbed the white stone staircase towards the front door. 'Syndra seems to be doing alright for
+        themselves. That bodes well for us.'
+      </p>
+
+      <p>
+        'I must admit, it does indicate a more...comfortable lifestyle.' came Zyllana's levelled answer. The group
+        reached the top of the stairs, and were faced with a large redwood door, in the centre of which hung a large,
+        brass door handle. Ignoring it, Zyllana raised a closed fist and rapped lightly on the wood, three times in
+        quick succession, and waited.
+      </p>
+
+      <p>
+        Some shuffling movements could eventually be heard, and the wooden door creaked open to reveal a well-tailored
+        servant in a dark dress shirt and matching trousers. His face was courteous, but not precisely welcoming; Ilro
+        presumed this was not a place where lavish parties were frequently held.
+      </p>
+
+      <p>The man spoke in a low drawl. 'May I help you?'.</p>
+
+      <p>'We come to meet with Syndra Silvane.' pronounced Faelthys. 'They're expecting us.'</p>
+
+      <p>
+        The servant's face was expressionless. 'Of course, they're expecting you.' he droned, stepping aside to let the
+        party through the threshold. The group walked in to a magnificent entrance hall, adorned with gold-framed
+        paintings, painstakingly crafted maps and lavish furniture. Anton resisted the urge to whistle again.
+      </p>
+
+      <p>'This way, follow me.'</p>
+
+      <p>
+        They were led through an archway to the right of the front door, into a room dominated by a large, wrought-iron
+        spiral staircase. The steps were perfectly arranged and showed not a hint of degradation, and the railings were
+        polished to an incredible sheen. The servant walked briskly up the stairs and the party followed, all trying
+        their best to maintain professionalism and not be swept up, or repulsed with the grandiose design.
+      </p>
+
+      <p>
+        At the top of the stairs was a short, narrow corridor. It featured no windows and only one door. It was to this
+        that Syndra's servant led them, and after needlessly brushing down his perfectly ironed shirt, he rapped on the
+        door, the sound mimicking exactly that of Zyllana's knock not minutes before. The voice from within was faint
+        and husky, but resonated with a strange confidence.
+      </p>
+
+      <p>'Enter.'</p>
     </React.Fragment>
   );
 };
