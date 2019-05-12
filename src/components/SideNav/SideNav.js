@@ -25,9 +25,6 @@ const sideNav = props => {
             <li>
               <NavLink to='/characters'>Our Party</NavLink>
             </li>
-            <li>
-              <NavLink to='/sandbox'>Sandbox</NavLink>
-            </li>
           </ul>
         </nav>
       </aside>
