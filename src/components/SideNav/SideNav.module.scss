@@ -34,4 +34,8 @@
       background-color: aliceblue;
     }
   }
+
+  @media (max-width: 768px) {
+    position: initial;
+  }
 }

@@ -17,4 +17,8 @@
       margin: 1rem;
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 2rem 0;
+  }
 }
