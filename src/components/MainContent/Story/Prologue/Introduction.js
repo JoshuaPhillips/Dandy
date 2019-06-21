@@ -346,18 +346,21 @@ const introduction = props => {
 
             <p>
               'Yes, perhaps best.' he agreed, thoughtfully. 'Ah well, thanks for your time.' He passed the pipe back to
-              the man, who drew another, fortifying breath before returning it without moving his gaze from the far
-              shore of the slowly-moving river.
+              the man, who drew another fortifying breath before returning it, his gaze never moving from the far shore
+              of the lethargic river.
             </p>
 
             <p>
               Anton wished he had been paying more attention, as he could see that the bowl of the pipe, now empty, was
               smeared with a thick, dark substance - a generous gift from the sailor's labour. From the smell, he didn't
-              think it was mud... With a final nod of farewell, he strode back up the road to return to his companions,
-              feeling frustrated at the fruitless nature of his visit.
+              think it was mud...
+            </p>
+
+            <p>
+              With a final nod of farewell, he strode back up the road to return to his companions, feeling frustrated
+              at the fruitless nature of his visit.
             </p>
           </PartySplitSection>
-          <PartySplitSection characters={['Test']} />
         </PartySplit>
 
         <p>
@@ -395,8 +398,8 @@ const introduction = props => {
         <p>'We come to meet with Syndra Silvane.' pronounced Faelthys. 'They're expecting us.'</p>
 
         <p>
-          The servant's face was expressionless. 'Of course, they're expecting you.' he droned, stepping aside to let
-          the party through the threshold. The group walked in to a magnificent entrance hall, adorned with gold-framed
+          The servant's face was expressionless. 'Of course they're expecting you.' he droned, stepping aside to let the
+          party through the threshold. The group walked in to a magnificent entrance hall, adorned with gold-framed
           paintings, painstakingly crafted maps and lavish furniture. Anton resisted the urge to whistle again.
         </p>
 

@@ -1,11 +1,11 @@
 .PartySplit {
   border-top: 2px solid lightgrey;
-
+  margin: 3rem 0;
   padding: 1rem 0 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  color: darken(grey, 10%);
+  justify-content: space-around;
+  color: grey;
   position: relative;
 
   &::before {
@@ -37,5 +37,6 @@
   p {
     letter-spacing: 0.1rem;
     line-height: 150%;
+    margin: 1rem 0;
   }
 }

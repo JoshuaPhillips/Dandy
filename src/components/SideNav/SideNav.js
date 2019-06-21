@@ -11,7 +11,7 @@ const sideNav = props => {
     <React.Fragment>
       <nav className={classes.SideNav}>
         <h1 className={classes.Header} onClick={() => props.changeChapter(null, null)}>
-          <Link to='/'>D&amp;D</Link>
+          <Link to='/'>D&amp;Dy</Link>
         </h1>
         <hr />
         {story.map((section, sectionIndex) => {

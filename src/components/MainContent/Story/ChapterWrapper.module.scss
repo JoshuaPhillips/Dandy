@@ -1,0 +1,8 @@
+.ChapterWrapper {
+  & > p {
+    margin: 1rem 0;
+    color: grey;
+    line-height: 150%;
+    letter-spacing: 0.1rem;
+  }
+}

@@ -5,7 +5,7 @@ import ChapterWrapper from '../ChapterWrapper';
 const chapterOne = props => {
   return (
     <ChapterWrapper>
-      <h1>Chapter One!</h1>;
+      <p>This is Chapter One of the Prologue</p>
     </ChapterWrapper>
   );
 };
