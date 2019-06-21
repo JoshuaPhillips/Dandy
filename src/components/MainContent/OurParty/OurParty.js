@@ -1,9 +1,9 @@
 import React from 'react';
 
 import CharacterBio from '../../CharacterBio/CharacterBio';
-import SectionTitle from '../SectionTitle/SectionTitle';
+import SectionTitle from '../../SectionTitle/SectionTitle';
 
-import ZylannaAvatar from '../../../assets/zyllana.jpg';
+import { characterBios } from '../../../data/characters.js';
 
 import classes from './OurParty.module.scss';
 
@@ -11,7 +11,7 @@ const ourParty = props => {
   return (
     <div className={classes.OurParty}>
       <SectionTitle>Our Party</SectionTitle>
-      <CharacterBio src={ZylannaAvatar}>
+      <CharacterBio character={characterBios.zyllana}>
         <p>
           Having spent her life in the monastery, Zyllana's life was completely upended one day when everyone and
           everything she had known was lost in a mysterious fire. Zyllana's life was saved by a visiting member of The

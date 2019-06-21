@@ -3,6 +3,17 @@ import React from 'react';
 import classes from './Quest.module.scss';
 
 const quest = props => {
+  let title = '';
+  props.type === 'new'
+    ? (title += 'New ')
+    : props.type === 'update'
+    ? (title += 'Quest Updated: ')
+    : (title += 'Quest Complete: ');
+
+  if (props.type === 'new') {
+    props.priority === 'main' ? (title += 'Main Quest: ') : (title += 'Side Quest: ');
+  }
+
   return (
     <div
       className={[
@@ -16,8 +27,8 @@ const quest = props => {
       </div>
       <div className={classes.QuestDetails}>
         <h2>
-          {props.type === 'new' ? 'New Quest' : props.type === 'update' ? 'Quest Updated' : 'Quest Complete'} -{' '}
-          {props.name}
+          {title}
+          {props.name.toUpperCase()}
         </h2>
         <h4>{props.desc}</h4>
         {props.children}

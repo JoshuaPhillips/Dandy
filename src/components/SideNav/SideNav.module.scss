@@ -1,5 +1,4 @@
 .Header {
-  padding-left: 1rem;
   width: 100%;
   font-size: 2rem;
   font-weight: bold;
@@ -15,11 +14,20 @@
     margin-top: 2rem;
   }
 
+  h2 {
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+  }
+
   li {
     font-weight: bold;
     cursor: pointer;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
-    transition: all 0.1s ease-in-out;
+    margin: 0 0 0 0.5rem;
+    transition: all 0.2s ease-in-out;
 
     a {
       color: grey;
@@ -30,8 +38,11 @@
     }
 
     &:hover {
-      margin-left: 0.5rem;
-      background-color: aliceblue;
+      margin-left: 1rem;
+
+      a {
+        color: black;
+      }
     }
   }
 

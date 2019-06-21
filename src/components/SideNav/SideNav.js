@@ -1,35 +1,56 @@
 import React from 'react';
-
 import { Link, NavLink } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import { story } from '../../data/story';
 
 import classes from './SideNav.module.scss';
 
 const sideNav = props => {
   return (
     <React.Fragment>
-      <aside className={classes.SideNav}>
-        <Link to='/' className={classes.Header}>
-          D&amp;DY
-        </Link>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to='/chapters/introduction'>Introduction</NavLink>
-            </li>
-            <li>
-              <NavLink to='/chapters/1'>Chapter One: Welcome to Chult</NavLink>
-            </li>
-          </ul>
-          <hr style={{ margin: '1rem 1rem', width: '200px' }} />
-          <ul>
-            <li>
-              <NavLink to='/characters'>Our Party</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </aside>
+      <nav className={classes.SideNav}>
+        <h1 className={classes.Header} onClick={() => props.changeChapter(null, null)}>
+          <Link to='/'>D&amp;D</Link>
+        </h1>
+        <hr />
+        {story.map((section, sectionIndex) => {
+          return (
+            <React.Fragment key={`${section.name}`}>
+              <h2>{section.name}</h2>
+
+              <ul>
+                {section.chapters.map((chapter, chapterIndex) => {
+                  return (
+                    <li
+                      key={`${section.name}__${chapter.title}`}
+                      onClick={() => props.changeChapter(sectionIndex, chapterIndex)}>
+                      <NavLink
+                        to={`/${section.name.toLowerCase().replace(/\s+/g, '-')}/${chapter.title
+                          .toLowerCase()
+                          .replace(/\s+/g, '-')}`}>
+                        {chapter.title}
+                      </NavLink>
+                    </li>
+                  );
+                })}
+              </ul>
+            </React.Fragment>
+          );
+        })}
+      </nav>
     </React.Fragment>
   );
 };
 
-export default sideNav;
+const mapDispatchToProps = dispatch => {
+  return {
+    changeChapter: (section, chapter) =>
+      dispatch({ type: 'CHANGE_CHAPTER', payload: { section: section, chapter: chapter } })
+  };
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(sideNav);

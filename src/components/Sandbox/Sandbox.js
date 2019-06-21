@@ -5,9 +5,9 @@ import classes from './Sandbox.module.scss';
 import Quest from '../Quest/Quest';
 import Combat from '../Combat/Combat';
 import LevelUp from '../LevelUp/LevelUp';
-import Lorem from '../../Lorem/Lorem';
+import Lorem from '../Lorem/Lorem';
 import Quote from '../Quote/Quote';
-import CharacterBio from '../../CharacterBio/CharacterBio';
+import CharacterBio from '../CharacterBio/CharacterBio';
 import PartySplit from '../PartySplit/PartySplit';
 import PartySplitSection from '../PartySplit/PartySplitSection/PartySplitSection';
 
