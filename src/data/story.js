@@ -14,14 +14,5 @@ export const story = [
         content: Prologue.chapterOne
       }
     ]
-  },
-  {
-    name: 'Part One',
-    chapters: [
-      {
-        title: 'Welcome to Chult',
-        content: SectionOne.chapterOne
-      }
-    ]
   }
 ];
