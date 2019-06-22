@@ -1,19 +1,15 @@
 .CharacterBio {
-  border: 2px solid lightgrey;
-  margin: 1rem 0;
-  padding: 1.5rem;
+  margin: 0 0 1rem;
+  padding: 0 0 1.5rem;
   color: darken(grey, 10%);
   display: flex;
-  background-color: lightgrey;
-  box-shadow: 0 0 12px grey;
   border-radius: 2px;
 
   figure {
     width: 30%;
     height: fit-content;
-    margin-right: 2rem;
+    margin-right: 3rem;
     position: relative;
-    box-shadow: 0 0 12px grey;
 
     img {
       max-width: 100%;

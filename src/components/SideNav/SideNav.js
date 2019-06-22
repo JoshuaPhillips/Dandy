@@ -13,7 +13,7 @@ const sideNav = props => {
         <h1 className={classes.Header} onClick={() => props.changeChapter(null, null)}>
           <Link to='/'>D&amp;Dy</Link>
         </h1>
-        <hr />
+
         {story.map((section, sectionIndex) => {
           return (
             <React.Fragment key={`${section.name}`}>
@@ -39,7 +39,7 @@ const sideNav = props => {
           );
         })}
         <hr />
-        <p>
+        <p onClick={() => props.changeChapter(null, null)}>
           <Link to='/our-party'>Our Party</Link>
         </p>
       </nav>

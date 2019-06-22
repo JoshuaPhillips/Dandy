@@ -1,9 +1,13 @@
 .BannerImage {
   position: relative;
   height: 300px;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 0 12px grey;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  background-position: center -120px;
+  background-repeat: repeat-y;
+  border-bottom: 2px solid grey;
+  margin-bottom: 2rem;
+  // box-shadow: 0 0 12px grey;
 
   figcaption {
     position: absolute;

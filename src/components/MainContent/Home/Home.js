@@ -17,7 +17,7 @@ const home = props => {
 
       <p>
         Click on the chapter headings in the menu on the left to skip to your favourite part, or check out{' '}
-        <NavLink to='/characters'>our party</NavLink> if you want to learn more about the adventurers.
+        <NavLink to='/our-party'>our party</NavLink> if you want to learn more about the adventurers.
       </p>
     </div>
   );

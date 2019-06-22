@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import SectionTitle from '../../SectionTitle/SectionTitle';
+import ChapterTitle from '../../ChapterTitle/ChapterTitle';
 import FootNav from '../../FootNav/FootNav';
 
 import { story } from '../../../data/story';
@@ -13,7 +13,7 @@ const chapterWrapper = props => {
 
   return (
     <div className={classes.ChapterWrapper}>
-      <SectionTitle title={story[currentSection].chapters[currentChapter].title} />
+      <ChapterTitle title={story[currentSection].chapters[currentChapter].title || props.title} />
       {props.children}
       <FootNav />
     </div>

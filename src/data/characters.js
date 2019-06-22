@@ -1,35 +1,38 @@
 import zyllanaAvatar from '../assets/zyllana.jpg';
+import ilroAvatar from '../assets/ilro.jpg';
+
+const playerLevel = 3;
 
 export const characterBios = {
   zyllana: {
     avatar: zyllanaAvatar,
     alt: '',
     name: 'Zyllana',
-    level: 3,
+    level: playerLevel,
     playerClass: 'Monk',
     race: 'Wood Elf'
   },
   ilro: {
-    src: '',
-    alt: '',
+    avatar: ilroAvatar,
+    alt: 'Picture of Ilro',
     name: 'Ilro',
-    level: 3,
+    level: playerLevel,
     playerClass: 'Druid',
-    race: 'Elf'
+    race: 'Half-Elf'
   },
   faelthys: {
-    src: '',
+    avatar: '',
     alt: '',
     name: 'Faelthys',
-    level: 3,
+    level: playerLevel,
     playerClass: 'Ranger',
     race: 'Wood Elf'
   },
   anton: {
-    src: '',
+    avatar: '',
     alt: '',
     name: 'Anton',
-    level: 3,
+    level: playerLevel,
     playerClass: 'Archaeologist',
     race: 'Human'
   }
