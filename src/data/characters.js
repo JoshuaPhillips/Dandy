@@ -1,5 +1,6 @@
 import zyllanaAvatar from '../assets/zyllana.jpg';
 import ilroAvatar from '../assets/ilro.jpg';
+import antonAvatar from '../assets/anton.jpg';
 
 const playerLevel = 3;
 
@@ -29,7 +30,7 @@ export const characterBios = {
     race: 'Wood Elf'
   },
   anton: {
-    avatar: '',
+    avatar: antonAvatar,
     alt: '',
     name: 'Anton',
     level: playerLevel,
