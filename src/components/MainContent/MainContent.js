@@ -31,7 +31,7 @@ const mainContent = props => {
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/sandbox' exact component={Sandbox} />
-        <Route path='/characters' exact component={OurParty} />
+        <Route path='/our-party' exact component={OurParty} />
         {chapterRoute}
       </Switch>
     </main>

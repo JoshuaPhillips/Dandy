@@ -8,11 +8,28 @@
 .SideNav {
   position: fixed;
   padding: 1rem 1rem 1rem 0;
-
   overflow-y: scroll;
 
-  nav {
-    margin-top: 2rem;
+  hr {
+    width: 8rem;
+    margin: 1rem 0;
+  }
+
+  p {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+
+    a {
+      color: grey;
+    }
+
+    &:hover {
+      margin-left: 1rem;
+
+      a {
+        color: black;
+      }
+    }
   }
 
   h2 {

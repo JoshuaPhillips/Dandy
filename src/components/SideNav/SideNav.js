@@ -38,6 +38,10 @@ const sideNav = props => {
             </React.Fragment>
           );
         })}
+        <hr />
+        <p>
+          <Link to='/our-party'>Our Party</Link>
+        </p>
       </nav>
     </React.Fragment>
   );

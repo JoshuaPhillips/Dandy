@@ -373,6 +373,8 @@ const introduction = props => {
           the merchant district, led by Faelthy's unwavering sense of direction.
         </p>
 
+        <SubTitle>The Silvane Estate</SubTitle>
+
         <p>
           The Silvane Estate was hard to miss - sprawling gardens with perfectly trimmed hedges, sparkling water
           features and ornate, delicate masonry adorning the windows and large doorway. Anton let out a low whistle of
