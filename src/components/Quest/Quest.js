@@ -2,52 +2,41 @@ import React from 'react';
 
 import classes from './Quest.module.scss';
 
-const quest = props => {
-  const { type, priority, name, rewards } = props;
+const Quest = props => {
+  const { type, name } = props;
+  let typeText;
+  let subClass;
 
-  let title = '';
-  type === 'new' ? (title += 'New ') : type === 'update' ? (title += 'Quest Updated: ') : (title += 'Quest Complete: ');
+  switch (type) {
+    case 'new':
+      typeText = 'Quest Added';
+      subClass = classes.New;
+      break;
 
-  if (type === 'new') {
-    priority === 'main' ? (title += 'Main Quest: ') : (title += 'Side Quest: ');
+    case 'update':
+      typeText = 'Quest Updated';
+      subClass = classes.Update;
+      break;
+
+    case 'complete':
+      typeText = 'Quest Completed';
+      subClass = classes.Complete;
+      break;
+
+    default:
+      break;
   }
 
   return (
-    <div
-      className={[
-        classes.Quest,
-        type === 'new' ? classes.New : type === 'update' ? classes.Update : classes.Complete
-      ].join(' ')}>
-      <div className={classes.QuestIcon}>
-        <span role='img' aria-label='quest-icon-emoji'>
-          {type === 'new' ? '🆕' : type === 'update' ? '📝' : '✅'}
-        </span>
+    <div className={[classes.Quest, subClass].join(' ')}>
+      <div className={classes.QuestTypeContainer}>
+        <p>{typeText}</p>
       </div>
-
-      <div className={classes.QuestDetails}>
-        <h2>
-          {title}
-          {name.toUpperCase()}
-        </h2>
-        {props.children && <div className={classes.ChildrenWrapper}>{props.children}</div>}
-
-        {rewards.length !== 0 ? (
-          <div className={classes.Rewards}>
-            <h2>Quest Rewards</h2>
-            <ul>
-              {rewards.map(reward => {
-                return <li key={reward}>{reward}</li>;
-              })}
-            </ul>
-          </div>
-        ) : null}
+      <div className={classes.QuestNameContainer}>
+        <p>{name.toUpperCase()}</p>
       </div>
     </div>
   );
 };
 
-quest.defaultProps = {
-  rewards: []
-};
-
-export default quest;
+export default Quest;

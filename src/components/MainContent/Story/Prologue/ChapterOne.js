@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ChapterWrapper from '../ChapterWrapper';
+import Quest from '../../../Quest/Quest';
 
 const chapterOne = props => {
   return (
@@ -31,6 +32,9 @@ const chapterOne = props => {
         'I appreciate you coming on such short notice...' croaked a voice on the edges of the firelight. The voice they
         had heard not moments before.
       </p>
+
+      <Quest type='complete' name='A New Assignment' />
+
       <p>
         Anton, who had been immediately enamoured with the cartography plastering the walls and tables, jumped at the
         sound, turning his attention towards the fire with an embarassed sigh. Zyllana and Faelthys, meanwhile, had
