@@ -1,11 +1,20 @@
 import React from 'react';
 
 import ChapterWrapper from '../ChapterWrapper';
+import Quest from '../../../Quest/Quest';
 
 const chapterTwo = props => {
   return (
     <ChapterWrapper>
-      <p>This part of the tale remains lost to the mists of legend. Only time can reveal it...</p>
+      <Quest type='complete' name='A New Assignment' priority='main' />
+
+      <Quest type='new' name={`Syndra's Lockbox`} priority='main'>
+        Test
+      </Quest>
+
+      <Quest type='update' name={`Syndra's Lockbox`} priority='main'>
+        Test
+      </Quest>
     </ChapterWrapper>
   );
 };

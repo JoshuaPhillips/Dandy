@@ -76,12 +76,12 @@ const introduction = props => {
         streets, Ilro only pausing to drain her tankard before stepping through the threshold.
       </p>
 
-      <Quest
-        type='new'
-        priority='main'
-        name='A New Assignment'
-        desc='Head further into the Merchant District to the house of Syndra Silvane, a contact from The Harpers, to learn more of your new mission.'
-      />
+      <Quest type='new' priority='main' name='A New Assignment'>
+        <p>
+          Head further into the Merchant District to the house of Syndra Silvane, a contact from The Harpers, to learn
+          more of your new mission.
+        </p>
+      </Quest>
       <SubTitle>Baldur's Gate - Merchant District</SubTitle>
 
       <p>
