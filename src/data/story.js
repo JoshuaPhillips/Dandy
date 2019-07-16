@@ -6,11 +6,15 @@ export const story = [
     chapters: [
       {
         title: 'Complications',
-        content: Prologue.introduction
+        content: Prologue.Introduction
       },
       {
         title: 'A New Assignment',
-        content: Prologue.chapterOne
+        content: Prologue.ChapterOne
+      },
+      {
+        title: 'Reclamation',
+        content: Prologue.ChapterTwo
       }
     ]
   }

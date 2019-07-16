@@ -30,6 +30,7 @@ const FootNav = props => {
 
   const prevLink = prev ? (
     <NavLink
+      className={classes.PrevLink}
       onClick={() => props.changeChapter(prev[0], prev[1])}
       to={`/${story[prev[0]].name.toLowerCase().replace(/\s+/g, '-')}/${story[prev[0]].chapters[prev[1]].title
         .toLowerCase()
@@ -40,6 +41,7 @@ const FootNav = props => {
 
   const nextLink = next ? (
     <NavLink
+      className={classes.NextLink}
       onClick={() => props.changeChapter(next[0], next[1])}
       to={`/${story[next[0]].name.toLowerCase().replace(/\s+/g, '-')}/${story[next[0]].chapters[next[1]].title
         .toLowerCase()

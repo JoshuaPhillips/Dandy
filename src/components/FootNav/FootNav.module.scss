@@ -1,20 +1,47 @@
 .FootNav {
-  margin: 2rem 10rem;
-  padding: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 0 3rem;
   display: flex;
   justify-content: space-between;
-
   border-top: 2px solid lightgrey;
 
   a {
     margin: 1rem auto;
     font-size: 1.5rem;
     color: grey;
+    position: relative;
+    background-color: white;
+  }
 
-    &::before,
+  .PrevLink {
+    &::before {
+      content: '\2190';
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(1px);
+      z-index: -10;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+      left: -20%;
+    }
+  }
+
+  .NextLink {
     &::after {
-      content: '\2015';
-      margin: 1rem;
+      content: '\2192';
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(1px);
+      z-index: -10;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover::after {
+      right: -25%;
     }
   }
 

@@ -3,13 +3,13 @@ import './App.css';
 
 //components
 import Layout from './components/Layout/Layout';
-import BannerImage from './components/BannerImage/BannerImage';
+import HeroImage from './components/HeroImage/HeroImage';
 import tombLogo from './assets/tombofannihillogo.jpg';
 
 const app = () => {
   return (
     <React.Fragment>
-      <BannerImage src={tombLogo} />
+      <HeroImage src={tombLogo} />
       <Layout />
     </React.Fragment>
   );
