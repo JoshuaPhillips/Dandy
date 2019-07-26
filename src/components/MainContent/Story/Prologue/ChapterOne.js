@@ -95,8 +95,8 @@ const chapterOne = props => {
       <p>
         'The island is a dangerous place, with few permanent settlements, and even fewer kind faces. Learning more about
         this artifact has proved...<em>challenging</em>. The only place with which we have had any fortune is Port
-        Nyanzaru, on the northern coast. Even there our details are scarce and fleeting. The Harpers are not used to
-        being kept in the dark.' This last sentence muttered with just a slight hint of venom.
+        Nyanzaru, on the northern coast. Even there our details are scarce and fleeting. The Harpers are not accustomed
+        to being kept in the dark.' This last sentence muttered with just a slight hint of venom.
       </p>
 
       <p>'What can you tell us?' questioned Zyllana.</p>
