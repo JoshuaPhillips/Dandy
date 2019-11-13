@@ -29,10 +29,10 @@ const mainContent = props => {
   return (
     <main className={classes.MainContent}>
       <Switch>
+        {chapterRoute}
         <Route path='/' exact component={Home} />
         <Route path='/sandbox' exact component={Sandbox} />
         <Route path='/our-party' exact component={OurParty} />
-        {chapterRoute}
       </Switch>
     </main>
   );
