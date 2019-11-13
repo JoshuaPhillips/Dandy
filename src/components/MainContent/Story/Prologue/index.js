@@ -1,11 +1,11 @@
-import Introduction from './Introduction';
-import ChapterOne from './ChapterOne';
-import ChapterTwo from './ChapterTwo';
+import Introduction from "./Introduction";
+import ChapterOne from "./ChapterOne";
+import ChapterTwo from "./ChapterTwo";
 
 const Prologue = {
-  Introduction: Introduction,
-  ChapterOne: ChapterOne,
-  ChapterTwo: ChapterTwo
+  Introduction,
+  ChapterOne,
+  ChapterTwo
 };
 
 export default Prologue;

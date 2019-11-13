@@ -1,7 +1,7 @@
-import ChapterOne from './ChapterOne';
+import ChapterOne from "./ChapterOne";
 
 const SectionOne = {
-  chapterOne: ChapterOne
+  ChapterOne
 };
 
 export default SectionOne;

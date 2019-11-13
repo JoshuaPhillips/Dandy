@@ -1,7 +1,6 @@
 import React from "react";
 
 import ChapterWrapper from "../ChapterWrapper";
-import Quest from "../../../Quest/Quest";
 import Quote from "../../../Quote/Quote";
 import PartySplit from "../../../PartySplit/PartySplit";
 import PartySplitSection from "../../../PartySplit/PartySplitSection/PartySplitSection";
@@ -10,7 +9,6 @@ import SubTitle from "../../../SubTitle/SubTitle";
 const chapterTwo = props => {
   return (
     <ChapterWrapper>
-      <Quest type="new" name={`Syndra's Lockbox`} />
       <p>
         Standing on the white marble steps of the Silvane Estate, Anton watched
         Zyllana stride wordlessly away from the group with her customary grace.
@@ -235,7 +233,44 @@ const chapterTwo = props => {
             wiped away the tear from his face.
           </p>
         </PartySplitSection>
-        <PartySplitSection characters={["Anton", "Ilro"]}></PartySplitSection>
+        <PartySplitSection characters={["Anton", "Ilro"]}>
+          <p>
+            The stench of stale ale and roasting meat assaulted the pair's
+            nostrils as they pushed through the heavy wooden door. The room
+            rolled with raucous laughter, the clinking of mugs and pitchers, and
+            the crackling of a large log fire occupying most of the opposite
+            wall.
+          </p>
+
+          <p>
+            The room was thick with pipe smoke, and large yellowing stains
+            dotted the ceiling. Several wooden tables of varying sizes and
+            shapes filled the room, and in the far corner a narrow, rickety
+            staircase led up towards rooms for those willing to spare the coin.
+          </p>
+
+          <p>
+            The right-hand wall was given exclusively to a large, polished
+            wooden bar. Three barmaids flitted between patrons sitting on low,
+            three-legged stools, and a matronly woman stood polishing tankards
+            with a damp grey rag.
+          </p>
+
+          <p>
+            Only a few eyes looked up as they entered; more out of habit than
+            actual curiosity. One of the barmaids flashed them a polite smile
+            and then returned to filling the goblet in her hands with a deep
+            crimson wine from a large oak barrel on the countertop.
+          </p>
+
+          <p>
+            'Over there.' whispered Anton, gesturing towards a round table in
+            the corner. Five or six stout-looking Hill Dwarves sat around it,
+            muscles roping their arms and legs and each with a large tankard of
+            foaming ale in their hands. They were deep in heated discussion,
+            with plenty of derisive laughter and dismissive gesturing.
+          </p>
+        </PartySplitSection>
       </PartySplit>
     </ChapterWrapper>
   );
