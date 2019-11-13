@@ -270,6 +270,18 @@ const chapterTwo = props => {
             foaming ale in their hands. They were deep in heated discussion,
             with plenty of derisive laughter and dismissive gesturing.
           </p>
+
+          <p>
+            'Are you sure?' asked Ilro, somewhat nervously. He'd never been one
+            for large crowds or the jostling and bustling of a tavern, and these
+            dwarves looked about as rowdy as he could imagine anyone being.
+          </p>
+
+          <p>
+            'When have I ever let you down?' smirked Anton, pressing a large
+            pouch of gold into Ilro's hand. 'Take this and ask the barmaid for a
+            round now and a round later.'
+          </p>
         </PartySplitSection>
       </PartySplit>
     </ChapterWrapper>
