@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import { connect } from "react-redux";
 
-import { story } from '../../data/story';
+import { story } from "../../data/Story/story";
 
-import classes from './SideNav.module.scss';
+import classes from "./SideNav.module.scss";
 
 const sideNav = props => {
   return (
@@ -26,9 +26,9 @@ const sideNav = props => {
                       key={`${section.name}__${chapter.title}`}
                       onClick={() => props.changeChapter(sectionIndex, chapterIndex)}>
                       <NavLink
-                        to={`/${section.name.toLowerCase().replace(/\s+/g, '-')}/${chapter.title
+                        to={`/${section.name.toLowerCase().replace(/\s+/g, "-")}/${chapter.title
                           .toLowerCase()
-                          .replace(/\s+/g, '-')}`}>
+                          .replace(/\s+/g, "-")}`}>
                         {chapter.title}
                       </NavLink>
                     </li>
@@ -50,11 +50,8 @@ const sideNav = props => {
 const mapDispatchToProps = dispatch => {
   return {
     changeChapter: (section, chapter) =>
-      dispatch({ type: 'CHANGE_CHAPTER', payload: { section: section, chapter: chapter } })
+      dispatch({ type: "CHANGE_CHAPTER", payload: { section: section, chapter: chapter } })
   };
 };
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(sideNav);
+export default connect(null, mapDispatchToProps)(sideNav);

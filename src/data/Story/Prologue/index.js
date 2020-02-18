@@ -2,10 +2,8 @@ import Introduction from "./Introduction";
 import ChapterOne from "./ChapterOne";
 import ChapterTwo from "./ChapterTwo";
 
-const Prologue = {
+export default {
   Introduction,
   ChapterOne,
   ChapterTwo
 };
-
-export default Prologue;

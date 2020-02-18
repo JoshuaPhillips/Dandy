@@ -1,15 +1,15 @@
-import React from 'react';
-import { withRouter, Switch, Route, Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
+import React from "react";
+import { withRouter, Switch, Route, Redirect } from "react-router-dom";
+import { connect } from "react-redux";
 
-import classes from './MainContent.module.scss';
+import classes from "./MainContent.module.scss";
 
 //components
-import Home from './Home/Home';
-import Sandbox from '../Sandbox/Sandbox';
-import OurParty from './OurParty/OurParty';
+import Home from "./Home/Home";
+import Sandbox from "../Sandbox/Sandbox";
+import OurParty from "./OurParty/OurParty";
 
-import { story } from '../../data/story';
+import { story } from "../../data/Story/story";
 
 const mainContent = props => {
   const { currentSection, currentChapter } = props;

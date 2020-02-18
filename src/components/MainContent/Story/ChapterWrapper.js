@@ -1,12 +1,12 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from "react";
+import { connect } from "react-redux";
 
-import ChapterTitle from '../../ChapterTitle/ChapterTitle';
-import FootNav from '../../FootNav/FootNav';
+import ChapterTitle from "../../ChapterTitle/ChapterTitle";
+import FootNav from "../../FootNav/FootNav";
 
-import { story } from '../../../data/story';
+import { story } from "../../../data/Story/story";
 
-import classes from './ChapterWrapper.module.scss';
+import classes from "./ChapterWrapper.module.scss";
 
 const chapterWrapper = props => {
   const { currentSection, currentChapter } = props;

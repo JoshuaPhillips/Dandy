@@ -1,19 +1,19 @@
-import Prologue from '../components/MainContent/Story/Prologue';
+import Prologue from "./Prologue";
 
 export const story = [
   {
-    name: 'Prologue',
+    name: "Prologue",
     chapters: [
       {
-        title: 'Complications',
+        title: "Complications",
         content: Prologue.Introduction
       },
       {
-        title: 'A New Assignment',
+        title: "A New Assignment",
         content: Prologue.ChapterOne
       },
       {
-        title: 'Reclamation',
+        title: "Reclamation",
         content: Prologue.ChapterTwo
       }
     ]

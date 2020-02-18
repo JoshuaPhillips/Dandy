@@ -1,10 +1,10 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { connect } from "react-redux";
+import { NavLink } from "react-router-dom";
 
-import { story } from '../../data/story';
+import { story } from "../../data/Story/story";
 
-import classes from './FootNav.module.scss';
+import classes from "./FootNav.module.scss";
 
 const FootNav = props => {
   const { currentSection, currentChapter } = props;
@@ -32,9 +32,9 @@ const FootNav = props => {
     <NavLink
       className={classes.PrevLink}
       onClick={() => props.changeChapter(prev[0], prev[1])}
-      to={`/${story[prev[0]].name.toLowerCase().replace(/\s+/g, '-')}/${story[prev[0]].chapters[prev[1]].title
+      to={`/${story[prev[0]].name.toLowerCase().replace(/\s+/g, "-")}/${story[prev[0]].chapters[prev[1]].title
         .toLowerCase()
-        .replace(/\s+/g, '-')}`}>
+        .replace(/\s+/g, "-")}`}>
       Previous Chapter
     </NavLink>
   ) : null;
@@ -43,9 +43,9 @@ const FootNav = props => {
     <NavLink
       className={classes.NextLink}
       onClick={() => props.changeChapter(next[0], next[1])}
-      to={`/${story[next[0]].name.toLowerCase().replace(/\s+/g, '-')}/${story[next[0]].chapters[next[1]].title
+      to={`/${story[next[0]].name.toLowerCase().replace(/\s+/g, "-")}/${story[next[0]].chapters[next[1]].title
         .toLowerCase()
-        .replace(/\s+/g, '-')}`}>
+        .replace(/\s+/g, "-")}`}>
       Next Chapter
     </NavLink>
   ) : null;
@@ -68,11 +68,8 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     changeChapter: (section, chapter) =>
-      dispatch({ type: 'CHANGE_CHAPTER', payload: { section: section, chapter: chapter } })
+      dispatch({ type: "CHANGE_CHAPTER", payload: { section: section, chapter: chapter } })
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(FootNav);
+export default connect(mapStateToProps, mapDispatchToProps)(FootNav);

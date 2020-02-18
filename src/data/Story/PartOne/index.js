@@ -1,7 +1,5 @@
 import ChapterOne from "./ChapterOne";
 
-const SectionOne = {
+export default {
   ChapterOne
 };
-
-export default SectionOne;
