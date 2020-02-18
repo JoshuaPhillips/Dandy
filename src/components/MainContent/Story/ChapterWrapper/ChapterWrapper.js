@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector } from "react-redux";
 
 import ChapterTitle from "../../../ChapterTitle/ChapterTitle";
 import FootNav from "../../../FootNav/FootNav";
@@ -8,8 +8,9 @@ import story from "../../../../data/story/story";
 
 import classes from "./ChapterWrapper.module.scss";
 
-const chapterWrapper = props => {
-  const { currentSection, currentChapter } = props;
+const ChapterWrapper = props => {
+  const currentSection = useSelector(state => state.currentSection);
+  const currentChapter = useSelector(state => state.currentChapter);
 
   return (
     <div className={classes.ChapterWrapper}>
@@ -20,11 +21,4 @@ const chapterWrapper = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    currentSection: state.currentSection,
-    currentChapter: state.currentChapter
-  };
-};
-
-export default connect(mapStateToProps)(chapterWrapper);
+export default ChapterWrapper;

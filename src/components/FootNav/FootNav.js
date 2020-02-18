@@ -1,5 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 
 import story from "../../data/story/story";
@@ -7,7 +7,9 @@ import story from "../../data/story/story";
 import classes from "./FootNav.module.scss";
 
 const FootNav = props => {
-  const { currentSection, currentChapter } = props;
+  const currentSection = useSelector(state => state.currentSection);
+  const currentChapter = useSelector(state => state.currentChapter);
+  const dispatch = useDispatch();
 
   let prev = [];
   let next = [];
@@ -28,13 +30,19 @@ const FootNav = props => {
     next = [currentSection, currentChapter + 1];
   }
 
+  const generateNavLinkUrl = direction => {
+    return `/${story[direction[0]].name.toLowerCase().replace(/\s+/g, "-")}/${story[direction[0]].chapters[
+      direction[1]
+    ].title
+      .toLowerCase()
+      .replace(/\s+/g, "-")}`;
+  };
+
   const prevLink = prev ? (
     <NavLink
       className={classes.PrevLink}
-      onClick={() => props.changeChapter(prev[0], prev[1])}
-      to={`/${story[prev[0]].name.toLowerCase().replace(/\s+/g, "-")}/${story[prev[0]].chapters[prev[1]].title
-        .toLowerCase()
-        .replace(/\s+/g, "-")}`}>
+      onClick={() => dispatch({ type: "CHANGE_CHAPTER", payload: { section: prev[0], chapter: prev[1] } })}
+      to={generateNavLinkUrl(prev)}>
       Previous Chapter
     </NavLink>
   ) : null;
@@ -42,10 +50,8 @@ const FootNav = props => {
   const nextLink = next ? (
     <NavLink
       className={classes.NextLink}
-      onClick={() => props.changeChapter(next[0], next[1])}
-      to={`/${story[next[0]].name.toLowerCase().replace(/\s+/g, "-")}/${story[next[0]].chapters[next[1]].title
-        .toLowerCase()
-        .replace(/\s+/g, "-")}`}>
+      onClick={() => dispatch({ type: "CHANGE_CHAPTER", payload: { section: next[0], chapter: next[1] } })}
+      to={generateNavLinkUrl(next)}>
       Next Chapter
     </NavLink>
   ) : null;
@@ -58,18 +64,4 @@ const FootNav = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    currentSection: state.currentSection,
-    currentChapter: state.currentChapter
-  };
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    changeChapter: (section, chapter) =>
-      dispatch({ type: "CHANGE_CHAPTER", payload: { section: section, chapter: chapter } })
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(FootNav);
+export default FootNav;

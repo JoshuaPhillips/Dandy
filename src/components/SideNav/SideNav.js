@@ -1,16 +1,22 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import story from "../../data/story/story";
 
 import classes from "./SideNav.module.scss";
 
-const sideNav = props => {
+const SideNav = props => {
+  const dispatch = useDispatch();
+
+  const changeChapter = (section, chapter) => {
+    dispatch({ type: "CHANGE_CHAPTER", payload: { section: section, chapter: chapter } });
+  };
+
   return (
     <React.Fragment>
       <nav className={classes.SideNav}>
-        <h1 className={classes.Header} onClick={() => props.changeChapter(null, null)}>
+        <h1 className={classes.Header} onClick={() => changeChapter(null, null)}>
           <Link to='/'>D&amp;Dy</Link>
         </h1>
 
@@ -24,7 +30,7 @@ const sideNav = props => {
                   return (
                     <li
                       key={`${section.name}__${chapter.title}`}
-                      onClick={() => props.changeChapter(sectionIndex, chapterIndex)}>
+                      onClick={() => changeChapter(sectionIndex, chapterIndex)}>
                       <NavLink
                         to={`/${section.name.toLowerCase().replace(/\s+/g, "-")}/${chapter.title
                           .toLowerCase()
@@ -47,11 +53,4 @@ const sideNav = props => {
   );
 };
 
-const mapDispatchToProps = dispatch => {
-  return {
-    changeChapter: (section, chapter) =>
-      dispatch({ type: "CHANGE_CHAPTER", payload: { section: section, chapter: chapter } })
-  };
-};
-
-export default connect(null, mapDispatchToProps)(sideNav);
+export default SideNav;

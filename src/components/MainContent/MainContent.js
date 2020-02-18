@@ -1,6 +1,6 @@
 import React from "react";
-import { withRouter, Switch, Route, Redirect } from "react-router-dom";
-import { connect } from "react-redux";
+import { Switch, Route, Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 import classes from "./MainContent.module.scss";
 
@@ -10,8 +10,10 @@ import OurParty from "./OurParty/OurParty";
 
 import story from "../../data/story/story";
 
-const mainContent = props => {
-  const { currentSection, currentChapter } = props;
+const MainContent = props => {
+  const currentSection = useSelector(state => state.currentSection);
+  const currentChapter = useSelector(state => state.currentChapter);
+
   let CurrentChapter;
   let chapterRoute;
 
@@ -36,11 +38,4 @@ const mainContent = props => {
   );
 };
 
-const mapStateToProps = state => {
-  return {
-    currentSection: state.currentSection,
-    currentChapter: state.currentChapter
-  };
-};
-
-export default connect(mapStateToProps)(withRouter(mainContent));
+export default MainContent;
