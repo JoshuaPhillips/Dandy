@@ -1,6 +1,6 @@
 import React from "react";
 
-import ChapterWrapper from "../../../components/MainContent/Story/ChapterWrapper";
+import ChapterWrapper from "../../../components/MainContent/Story/ChapterWrapper/ChapterWrapper";
 import Quote from "../../../components/Quote/Quote";
 import PartySplit from "../../../components/PartySplit/PartySplit";
 import PartySplitSection from "../../../components/PartySplit/PartySplitSection/PartySplitSection";

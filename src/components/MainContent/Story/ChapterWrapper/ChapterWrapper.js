@@ -1,10 +1,10 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import ChapterTitle from "../../ChapterTitle/ChapterTitle";
-import FootNav from "../../FootNav/FootNav";
+import ChapterTitle from "../../../ChapterTitle/ChapterTitle";
+import FootNav from "../../../FootNav/FootNav";
 
-import { story } from "../../../data/Story/story";
+import story from "../../../../data/story/story";
 
 import classes from "./ChapterWrapper.module.scss";
 

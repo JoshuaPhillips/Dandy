@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { NavLink } from "react-router-dom";
 
-import { story } from "../../data/Story/story";
+import story from "../../data/story/story";
 
 import classes from "./FootNav.module.scss";
 

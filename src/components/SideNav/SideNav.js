@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
-import { story } from "../../data/Story/story";
+import story from "../../data/story/story";
 
 import classes from "./SideNav.module.scss";
 

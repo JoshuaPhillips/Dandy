@@ -6,10 +6,9 @@ import classes from "./MainContent.module.scss";
 
 //components
 import Home from "./Home/Home";
-import Sandbox from "../Sandbox/Sandbox";
 import OurParty from "./OurParty/OurParty";
 
-import { story } from "../../data/Story/story";
+import story from "../../data/story/story";
 
 const mainContent = props => {
   const { currentSection, currentChapter } = props;
@@ -31,7 +30,6 @@ const mainContent = props => {
       <Switch>
         {chapterRoute}
         <Route path='/' exact component={Home} />
-        <Route path='/sandbox' exact component={Sandbox} />
         <Route path='/our-party' exact component={OurParty} />
       </Switch>
     </main>

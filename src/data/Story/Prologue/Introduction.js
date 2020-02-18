@@ -1,12 +1,12 @@
 import React from "react";
 
-import BannerText from "../../../components/BannerText/BannerText";
+import BannerText from "../../../components/MainContent/Story/BannerText/BannerText";
 import Quote from "../../../components/Quote/Quote";
 import SubTitle from "../../../components/SubTitle/SubTitle";
 import PartySplit from "../../../components/PartySplit/PartySplit";
 import PartySplitSection from "../../../components/PartySplit/PartySplitSection/PartySplitSection";
 
-import ChapterWrapper from "../../../components/MainContent/Story/ChapterWrapper";
+import ChapterWrapper from "../../../components/MainContent/Story/ChapterWrapper/ChapterWrapper";
 
 const introduction = props => {
   return (

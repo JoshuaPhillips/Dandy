@@ -1,6 +1,6 @@
 import React from "react";
 
-import ChapterWrapper from "../../../components/MainContent/Story/ChapterWrapper";
+import ChapterWrapper from "../../../components/MainContent/Story/ChapterWrapper/ChapterWrapper";
 
 const chapterOne = props => {
   return (

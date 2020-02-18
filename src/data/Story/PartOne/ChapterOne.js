@@ -1,6 +1,6 @@
 import React from "react";
 
-import BannerText from "../../../components/BannerText/BannerText";
+import BannerText from "../../../components/MainContent/Story/BannerText/BannerText";
 
 const chapterOne = props => {
   return (

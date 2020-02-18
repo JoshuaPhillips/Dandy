@@ -3,7 +3,19 @@ import ChapterOne from "./ChapterOne";
 import ChapterTwo from "./ChapterTwo";
 
 export default {
-  Introduction,
-  ChapterOne,
-  ChapterTwo
+  name: "Prologue",
+  chapters: [
+    {
+      title: "Complications",
+      content: Introduction
+    },
+    {
+      title: "A New Assignment",
+      content: ChapterOne
+    },
+    {
+      title: "Reclamation",
+      content: ChapterTwo
+    }
+  ]
 };
