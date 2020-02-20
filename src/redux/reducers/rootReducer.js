@@ -1,11 +1,11 @@
 const initialState = {
   currentSection: 0,
-  currentChapter: 0
+  currentChapter: 2
 };
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
-    case 'CHANGE_CHAPTER':
+    case "CHANGE_CHAPTER":
       return {
         ...state,
         currentSection: action.payload.section,

@@ -222,6 +222,19 @@ const chapterTwo = props => {
             'When have I ever let you down?' smirked Anton, pressing a large pouch of gold into Ilro's hand. 'Take this
             and ask the barmaid for a round now and a round later.'
           </p>
+
+          <p>
+            'Well... there was that time when...' began Ilro, but Anton was already well out of earshot in the deafening
+            din of their surroundings.
+          </p>
+
+          <p>
+            Suppressing a weary sigh, Ilro wondered up to the bar and, after squeezing his way through a pair of
+            mountain dwarves (stout by beverage, stout by nature), dutifully ordered the drinks. The barmaid - not the
+            one with the smile - hesitated, before seeing the bulging coin purse clenched protectively in Ilro's hand.
+            This sight went a long way to assuage any doubts, and she began fetching tankards from underneath the bar
+            with practiced speed.
+          </p>
         </PartySplitSection>
       </PartySplit>
     </ChapterWrapper>
